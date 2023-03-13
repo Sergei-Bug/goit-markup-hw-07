@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
   </head>
   <body>
     <header class="page-header">
@@ -25,6 +25,16 @@
           <a href="./index.html" class="logo-ws"
             >Web<span class="logo-ws-dark">Studio</span></a
           >
+          <button
+            type="button"
+            class="menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-icon" aria-label="mobile menu switcher">
+              <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+            </svg>
+          </button>
           <ul class="list-nav list">
             <li class="item">
               <a class="nav-link link active-link" href="">Studio</a>
@@ -436,6 +446,68 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-btn-close js-close-menu">
+        <svg class="icon-close-menu">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav">
+        <ul class="mobile-menu list">
+          <li class="item"><a href="./index.html" class="link">Studio</a></li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Portfolio</a>
+          </li>
+          <li class="item"><a href="" class="link">Contacts</a></li>
+        </ul>
+        <div class="mobile-menu-contacts">
+          <ul class="mobile-contacts list">
+            <li class="item">
+              <a href="tel:+110001111111" class="tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list social-med-list">
+            <li class="item">
+              <a href="" class="icon-link">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-link">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-link">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-link">
+                <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
